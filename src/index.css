@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html,body,#root{
+        @apply h-full bg-white text-white antialiased
+    }
+    #root{
+        @apply flex flex-col
+    }
+    .wrapper {
+        height: calc(80% - theme('spacing.24'));
+        @apply flex
+    }
+
+    .card{
+        @apply shadow-lg rounded-lg min-h-[16rem] min-w-[20rem] hover:bg-greener duration-300 hover:shadow-2xl cursor-pointer text-zinc-800 hover:text-white border
+    }
+
+    .card2{
+        @apply grid justify-items-center gap-4
+    }
+
+    .card3{
+        @apply col-span-1 rounded-lg shadow-2xl border
+    }
+}
